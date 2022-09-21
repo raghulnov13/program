@@ -2,9 +2,13 @@
 function getAge(birthYear) 
 {
     var today = new Date();
+    console.log(today);
     var birthDate = new Date(birthYear);
+    console.log(birthDate);
     var age = today.getFullYear() - birthDate.getFullYear();
+    console.log(age);
     var m = today.getMonth() - birthDate.getMonth();
+    console.log(m);
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
     {
         age--;
@@ -19,9 +23,25 @@ function isWeekend(date = new Date()) {
     return date.getDay() === 6 || date.getDay() === 0;
   }
   
-  const d1 = new Date('2022-09-12');
-  console.log(d1); // 👉️ Saturday Sep 24 2022
+  const d1 = new Date('2022-09-11');
+  console.log(d1);  
   
-  console.log(d1.getDay()); // 👉️ 6
+  console.log(d1.getDay());
   
-  console.log(isWeekend(d1)); // 👉️ true
+  console.log(isWeekend(d1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
